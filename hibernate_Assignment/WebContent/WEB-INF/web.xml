@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Day4-Cookie</display-name>
+  <welcome-file-list>
+    <welcome-file>UserLogin.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>ABC</servlet-name>
+    <servlet-class>userServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ABC</servlet-name>
+    <url-pattern>/userServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AB</servlet-name>
+    <servlet-class>verification</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AB</servlet-name>
+    <url-pattern>/verify</url-pattern>
+  </servlet-mapping>
+  
+  
+ <servlet>
+    <servlet-name>ABD</servlet-name>
+    <servlet-class>docServlet</servlet-class>
+ </servlet>
+  <servlet-mapping>
+    <servlet-name>ABD</servlet-name>
+    <url-pattern>/docServlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
